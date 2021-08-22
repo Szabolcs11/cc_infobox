@@ -22,10 +22,8 @@ function renderinfobox ()
 			CurrentY = interpolateBetween (v.EndY, 0, 0, v.StartY-(sy*0.01), 0, 0, v.alphaProgress, "Linear")
 		end 
 
-		-- dxDrawRectangle(sx*0.4, CurrentY, sx*0.2, sy*0.07, tocolor(0, 0, 0, 180))
 		dxDrawRoundedRectangle(sx*0.3975, CurrentY-(sy*0.005), sx*0.205, sy*0.08, 20, tocolor(65, 34, 138, 180), false, false)
 		dxDrawRoundedRectangle(sx*0.4, CurrentY, sx*0.2, sy*0.07, 18, tocolor(100, 100, 100, 180), false, false)
-		-- dxDrawRoundedRectangle(sx*0.35, sy*0.4, sx*0.3, sy*0.2, 30, tocolor(65, 34, 138, 255), false, false)
 		if (v.Firstline == "") then 
 			dxDrawText(v.Text, sx*0.4, CurrentY+(sy*0.01), sx*0.6, sy*0.07, tocolor(v.r, v.g, v.b, 220), 1, v.font, "center")
 		else 
@@ -71,8 +69,6 @@ function addNotification(player, text, type)
 					g = 255
 					b = 255
 				end
-				
-				-- // Teszt \\ --
 
 				table.insert(notifications,
 				{
@@ -137,7 +133,6 @@ function elsoline(input, maxlenght)
 		return ""
 	end 
 end 
-addCommandHandler("stringtext", elsoline)
 
 function masodikline(input, maxlenght)
 	local maxlenght = tonumber(maxlenght)
@@ -168,7 +163,6 @@ function masodikline(input, maxlenght)
 		return ""
 	end 
 end 
-addCommandHandler("stringtext", masodikline)
 
 
 -- // Useful Funkciók \\ -- 
