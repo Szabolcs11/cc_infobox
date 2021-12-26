@@ -1,4 +1,5 @@
 local sx, sy = guiGetScreenSize()
+local sx, sy = guiGetScreenSize()
 
 local dxFontLarge = dxCreateFont("files/font.ttf", 70)
 local dxFont = dxCreateFont("files/font.ttf", 30)
